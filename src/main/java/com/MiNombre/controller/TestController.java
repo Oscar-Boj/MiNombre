@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @GetMapping("/hola/{nombre}")
-    public String sayHello(@PathVariable String nombre) {
-        return "hola, " + nombre + "!!";
+    @GetMapping("/")
+    public String home() {
+        return "Hello, this is my name!";
     }
 }
